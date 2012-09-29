@@ -6,7 +6,7 @@ This is an add-in for uploading your images to internet hosting sites. Currently
 
 - It has a lib copy of the current Pinta.Core to build against, and it currently needs manual updating. (Need to look into automatic updates here.)
 
-- It's set up for upload to a Cydin server for easy distribution. For development porpuses, the generated dll can ba placed in Pinta's bin folder.
+- It's set up for upload to a Cydin server for easy distribution. For development purposes, the generated dll can be placed in Pinta's bin folder.
 
 
 
