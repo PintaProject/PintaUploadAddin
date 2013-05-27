@@ -27,7 +27,7 @@ THE SOFTWARE.
 -->
 
 <AddinProject appVersion="1.5">
-	<Project platforms="Mac Win32 Linux">
+	<Project platforms="All">
 		<AddinFile>PintaUploadAddin/bin/Debug/PintaUploadAddin.dll</AddinFile>
 		<BuildFile>PintaUploadAddin.sln</BuildFile>
 		<BuildConfiguration>Debug</BuildConfiguration>
