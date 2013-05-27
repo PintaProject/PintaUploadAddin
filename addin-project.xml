@@ -26,7 +26,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -->
 
-<AddinProject appVersion="1.4">
+<AddinProject appVersion="1.5">
 	<Project platforms="Mac Win32 Linux">
 		<AddinFile>PintaUploadAddin/bin/Debug/PintaUploadAddin.dll</AddinFile>
 		<BuildFile>PintaUploadAddin.sln</BuildFile>
