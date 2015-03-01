@@ -26,7 +26,7 @@ using Mono.Addins;
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
 
-[assembly: Addin ("PintaUploadAddin", "0.1", Category = "Web")]
+[assembly: Addin ("PintaUploadAddin", "0.1.1", Category = "Web")]
 [assembly: AddinName ("Uploader")]
 [assembly: AddinDescription ("Allows you to upload your images to web sites. Currently supported: imgur.com")]
 [assembly: AddinDependency ("Pinta", "1.5")]
