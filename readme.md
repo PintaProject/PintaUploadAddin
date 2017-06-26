@@ -1,6 +1,6 @@
 # Pinta Upload Add-in
 
-This is an add-in for uploading your images to internet hosting sites. Currently, it only supports the simplest kind of imgur upload, but more advanced types could be coming if anyone wants to make them!
+This is an proof of concept add-in for uploading your images to internet hosting sites. The only upload type that has been implemented is the obsolete Imgur v1 upload API, so this addin currently does not work until someone does the job of updating it to the new API. (See issue #11)
 
 ##Notes
 
