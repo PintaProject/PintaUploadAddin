@@ -48,15 +48,16 @@ namespace PintaUploadAddin
 				sb.Append(Uri.EscapeDataString(base64img.Substring(i, Math.Min(MAX_URI_LENGTH, base64img.Length - i))));
 			}
 
-			string uploadRequestString = "image=" + sb.ToString() + "&key=" + apiKey;
+			string uploadRequestString = "image=" + sb.ToString ();
 
-			HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("http://api.imgur.com/2/upload");
+			HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create("https://api.imgur.com/3/image.xml");
 			webRequest.Method = "POST";
 			webRequest.ContentType = "application/x-www-form-urlencoded";
+			webRequest.Headers ["authorization"] = "Client-ID 3daa740367748fb";
 			webRequest.ServicePoint.Expect100Continue = false;
 
 			StreamWriter streamWriter = new StreamWriter(webRequest.GetRequestStream());
-			streamWriter.Write(uploadRequestString);
+			streamWriter.Write(base64img);
 			streamWriter.Close();
 
 			WebResponse response = webRequest.GetResponse();
@@ -72,7 +73,7 @@ namespace PintaUploadAddin
 		{
 			//TODO: Parse some other interesting stuff out of this!
 			XDocument resultXML = XDocument.Parse (result);
-			return resultXML.Element ("upload").Element ("links").Element ("imgur_page").Value;
+			return resultXML.Element ("data").Element ("link").Value;
 		}
 		
 	}
